@@ -7,31 +7,57 @@
     <title>Blockfuse Faucet</title>
 </head>
 <body>
-    <div>
-        <div class="flex flex-row align-center items-center gap-7 m-10">
+    <div class="h-screen flex flex-col justify-between">
+        <!-- Navbar Section -->
+        <div class="flex flex-wrap items-center gap-4 sm:gap-7 p-5">
             <img class="w-12" src="./image/blockfuse-logo-BgIWHfHT.png" alt="logo">
-            <p>Blockfuse Labs</p>
-            <img class="w-[150px]" src="data:image/svg+xml,%3csvg%20width='762'%20height='69'%20viewBox='0%200%20762%2069'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_d_10_185)'%3e%3ccircle%20cx='727.5'%20cy='30.5'%20r='14'%20fill='white'%20fill-opacity='0.9'%20shape-rendering='crispEdges'/%3e%3ccircle%20cx='727.5'%20cy='30.5'%20r='14'%20fill='url(%23paint0_radial_10_185)'%20fill-opacity='0.3'%20shape-rendering='crispEdges'/%3e%3c/g%3e%3cg%20filter='url(%23filter1_d_10_185)'%3e%3ccircle%20cx='727.5'%20cy='30.5'%20r='8'%20fill='url(%23paint1_radial_10_185)'%20fill-opacity='0.3'%20shape-rendering='crispEdges'/%3e%3c/g%3e%3cpath%20d='M724.833%2030.9999C724.833%2032.4727%20726.027%2033.6666%20727.5%2033.6666C728.973%2033.6666%20730.167%2032.4727%20730.167%2030.9999C730.167%2029.5272%20728.973%2028.3333%20727.5%2028.3333C726.027%2028.3333%20724.833%2029.5272%20724.833%2030.9999ZM0.5%2031.5L727.5%2031.4999L727.5%2030.4999L0.5%2030.5L0.5%2031.5Z'%20fill='black'/%3e%3cdefs%3e%3cfilter%20id='filter0_d_10_185'%20x='693.5'%20y='0.5'%20width='68'%20height='68'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='4'/%3e%3cfeGaussianBlur%20stdDeviation='10'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.1%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_10_185'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_10_185'%20result='shape'/%3e%3c/filter%3e%3cfilter%20id='filter1_d_10_185'%20x='699.5'%20y='6.5'%20width='56'%20height='56'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeColorMatrix%20in='SourceAlpha'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200'%20result='hardAlpha'/%3e%3cfeOffset%20dy='4'/%3e%3cfeGaussianBlur%20stdDeviation='10'/%3e%3cfeComposite%20in2='hardAlpha'%20operator='out'/%3e%3cfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.1%200'/%3e%3cfeBlend%20mode='normal'%20in2='BackgroundImageFix'%20result='effect1_dropShadow_10_185'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_dropShadow_10_185'%20result='shape'/%3e%3c/filter%3e%3cradialGradient%20id='paint0_radial_10_185'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(713.5%2016.5)%20rotate(44.4154)%20scale(40.0083%20231.12)'%3e%3cstop%20stop-color='%239C2CF3'/%3e%3cstop%20offset='1'%20stop-color='%233A6FF9'/%3e%3c/radialGradient%3e%3cradialGradient%20id='paint1_radial_10_185'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(719.5%2022.5)%20rotate(44.4154)%20scale(22.8619%20132.069)'%3e%3cstop%20stop-color='%239C2CF3'/%3e%3cstop%20offset='1'%20stop-color='%233A6FF9'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e" alt="">
-            <button class="px-2 py-1 text-black rounded-full shadow-md hover: focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border border-purple-600">Claim Faucet</button>
-
-            <button class="px-2 py-1 bg-purple-600 text-white font-semibold rounded-full shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Connect Wallet</button>
-            
+            <p class="text-lg font-semibold">Blockfuse Labs</p>
+            <img class="w-[150px] hidden sm:block" src="data:image/svg+xml,%3csvg%20width='762'%20height='69'%20viewBox='0%200%20762%2069'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'" alt="">
+    
+            <div class="ml-auto flex gap-3">
+                <button class="px-4 py-2 text-black rounded-full border border-purple-600 shadow-md hover:bg-purple-100 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                    Claim Faucet
+                </button>
+                <button class="px-4 py-2 bg-purple-600 text-white font-semibold rounded-full shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+                    Connect Wallet
+                </button>
+            </div>
         </div>
-        <div class="flex flex-row justify-center justify-evenly  align-center text-center gap-" >
-            <div class="flex-col">
-                <p class="text-7xl mt-10">
+    
+        <!-- Main Content Section -->
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-evenly text-center px-5">
+            <div class="flex flex-col items-center md:items-start">
+                <p class="text-5xl sm:text-6xl md:text-7xl font-bold mt-10">
                     <span class="block">Mint Your</span>
                     <span class="block">Blockfuse Labs</span>
                     <span class="block">NFT</span>
-                  </p>
-                  
-                <button class="px-4 py-2 text-black rounded-full shadow-md hover: focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 border border-purple-600">Mint Blockfuse labs NFT</button>
+                </p>
+    
+                <button class="px-6 py-3 mt-5 sm:mt-10 text-black rounded-full border border-purple-600 shadow-md hover:bg-purple-100  focus:ring-opacity-50 self-center md:self-start">
+                    Mint Blockfuse Labs NFT
+                </button>
             </div>
-            <div class="" >
-                <img class="rounded-full h-[500px] w-[500px] object-cover" src="./image/nfts-661.jpg.webp" alt="">
+    
+            <!-- Image Section -->
+            <div class="flex justify-center">
+                <img class="rounded-full aspect-square w-[300px] sm:w-[400px] md:w-[500px] object-cover" 
+                src="./image/nfts-661.jpg.webp" 
+                alt="NFT Image">
             </div>
+        </div>
+    
+        <!-- Footer Section -->
+        <div class="flex justify-center mb-5">
+            <p class="text-lg font-semibold">Blockfuse Labs Faucet</p>
+        </div>
     </div>
-    </div>
+    
     
 </body>
 </html>
+
+
+
+
+
+
