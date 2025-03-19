@@ -553,3 +553,51 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.flex {
+  display: flex;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-\[30\] {
+  width: 30;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[90px\] {
+  width: 90px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-7 {
+  gap: 1.75rem;
+}
